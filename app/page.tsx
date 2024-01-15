@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Counter from '../components/Counter';
+import NumberInput from '@/components/NumberInput';
 
 const metadata = {
   title: 'learning vitest',
@@ -9,6 +10,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center gap-4">
       <h1>vitest</h1>
       <Counter />
+      <NumberInput />
       <Image
         src="/vercel.svg"
         alt="Vercel Logo"
