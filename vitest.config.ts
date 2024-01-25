@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
+    setupFiles: ['./vitest-setup.js'],
   },
   resolve: {
     alias: [{ find: '@', replacement: path.resolve(__dirname, './') }],

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Counter from '@/components/Counter';
 import NumberInput from '@/components/NumberInput';
+import Toggle from '@/components/Toggle';
 
 const metadata = {
   title: 'learning vitest',
@@ -27,6 +28,7 @@ export default function Home() {
         height={37}
         priority
       />
+      <Toggle>toggle</Toggle>
     </main>
   );
 }
